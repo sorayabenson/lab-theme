@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Header from '../components/header/Header';
 import GhostList from '../components/list/GhostList';
 import Spinner from '../components/spinner/Spinner';
 import { summonGhosts } from  '../services/api-utils';
@@ -16,9 +17,12 @@ const Ghost = () => {
     if (loading) return <Spinner />
 
     return (
-        <div>
-            <GhostList ghosts={ghosts}/>
-        </div>
+        <>
+            <Header />
+            <main>
+                <GhostList ghosts={ghosts}/>
+            </main>
+        </>
     )
 }
 

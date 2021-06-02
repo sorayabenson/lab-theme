@@ -15,13 +15,14 @@ li {
 
 .ghostItem {
     width: 20rem;
-    height: 25rem;
+    height: 20rem;
     border: ivory 3px solid;
     border-radius: 2px;
     box-shadow: ivory -8px 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     transition: 0.3s ease-in-out;
     position: relative;
 }
@@ -32,15 +33,34 @@ li {
     transition: 0.3s ease-in-out;
 }
 
+.name {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgb(121, 255, 210);
+    background-image: linear-gradient(transparent, rgba(27, 27, 27, 1));
+    text-shadow: ivory 0px 0px 1px;
+    font-family: 'Bungee Shade', cursive;
+}
+
 .hoverCaption {
-    /* visibility: hidden; */
+    visibility: hidden;
     z-index: 2;
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: 90%;
     height: auto;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 0.9rem;    
+    text-shadow: rgb(27, 27, 27) 0px 0px 10px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
 }
 
 .ghostItem:hover {
@@ -58,5 +78,5 @@ li {
 }
 
 .ghostItem:hover img {
-    opacity: 20%;
+    opacity: 15%;
 }

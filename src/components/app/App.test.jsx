@@ -27,9 +27,9 @@ describe('App component', () => {
   it('renders App', () => {
     render(<App />);
 
-    screen.getByText('ghost flip');
-    screen.getByText('flip the switch, flip the ghosts');
-    const toggle = screen.getByRole('checkbox', { name: 'theme switch' });
+    screen.findByText('ghost flip');
+    screen.findByText('flip the switch, flip the ghosts');
+    const toggle = screen.findByRole('checkbox', { name: 'theme switch' });
         
   });
 });
