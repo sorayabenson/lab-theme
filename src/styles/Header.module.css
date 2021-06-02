@@ -1,0 +1,72 @@
+.header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 5s ease-in-out;
+    margin-bottom: 3rem;
+}
+
+.header h1 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 3.6rem;
+    height: 2rem;
+}
+
+.toggle input {
+    visibility: hidden;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(121, 255, 210);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: '';
+    height: 1.6rem;
+    width: 1.6rem;
+    left: .2rem;
+    bottom: .2rem;
+    background: ivory;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: coral;
+}
+
+input:focus + .slider {
+    box-shadow: rgb(121, 255, 210) -2px 2px;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(1.6rem);
+    -ms-transform: translateX(1.6rem);
+    transform: translateX(1.6rem);
+}
+
+.text {
+    font-size: 0.9rem;
+    margin: 0.5rem;
+}
