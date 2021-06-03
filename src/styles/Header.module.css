@@ -81,7 +81,7 @@ header {
 }
 
 input:checked + .slider {
-    background-color: coral;
+    background: rgb(255, 120, 42);
 }
 
 input:focus + .slider {

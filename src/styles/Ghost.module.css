@@ -114,7 +114,7 @@ li {
     z-index: 2;
     font-size: 1.6rem;
     font-weight: 400;
-    color: coral;
+    color: rgb(255, 120, 42);
     background-image: linear-gradient(transparent, rgba(27, 27, 27, 1));
     text-shadow: ivory 0px 0px 1px;
     font-family: 'Bungee Shade', cursive;
@@ -135,9 +135,9 @@ li {
 }
 
 .down:hover {
-    border: coral 3px solid;
+    border: rgb(255, 120, 42) 3px solid;
     border-radius: 2px;
-    box-shadow: coral -8px 8px;
+    box-shadow: rgb(255, 120, 42) -8px 8px;
 }
 
 .down:hover .hoverCaption {
