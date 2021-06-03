@@ -2,12 +2,11 @@ import React, { useState, useEffect, useContext } from 'react';
 import Header from '../components/header/Header';
 import GhostList from '../components/list/GhostList';
 import Spinner from '../components/spinner/Spinner';
-import { summonGhosts } from  '../services/api-utils';
 import { useTheme, useFlip } from '../provider/GhostProvider';
+import { useGhost } from '../hooks/useGhost';
 
 const Ghost = () => {
-    const [ghosts, setGhosts] = useState([]);
-    const [loading, setLoading] = useState(true);
+    const { ghosts, loading } = useGhost();
     const [theme, setTheme] = useState(true);
 
     const flipGhosts = () => {
@@ -21,12 +20,6 @@ const Ghost = () => {
     // const { theme, flipGhosts } = useContext(GhostContext);
     // const theme = useTheme();
     // const flipGhosts = useFlip();
-
-    useEffect(() => {
-        summonGhosts()
-            .then(setGhosts)
-            .finally(() => setLoading(false))
-    })
 
     if (loading) return <Spinner />
 
