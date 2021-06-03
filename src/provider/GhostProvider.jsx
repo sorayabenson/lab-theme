@@ -1,16 +1,42 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, {createContext, useContext, useState} from 'react';
+import PropTypes from 'prop-types';
 
-const GhostProvider = props => {
-    return (
-        <div>
-            
-        </div>
+const GhostContext = createContext();
+
+const GhostProvider = ({ children }) => {
+    const [theme, setTheme] = useState(true);
+
+    const flipGhosts = () => {
+        if (theme === true) {
+            setTheme(false)
+        } else {
+            setTheme(true)
+        }
+    }
+
+    const state = { theme, flipGhosts };
+    
+    return ( 
+        <GhostContext.Provider value={state}>{children}</GhostContext.Provider>
     )
 }
 
-GhostProvider.propTypes = {
-
+export const useGhosts = () => {
+    return useContext(GhostContext);
 }
 
-export default GhostProvider
+export const useFlip = () => {
+    const { flipGhosts } = useContext(GhostContext);
+    return flipGhosts;
+}
+
+export const useTheme = () => {
+    const { theme } = useContext(GhostContext);
+    return theme;
+}
+
+GhostProvider.propTypes = {
+    children: PropTypes.node.isRequired,
+}
+
+export default GhostProvider;

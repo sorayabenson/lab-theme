@@ -1,0 +1,224 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component renders App 1`] = `
+<ul
+  aria-label="ghosts"
+>
+  <li
+    aria-label="ghost"
+  >
+    <figure
+      aria-label="ghost item"
+      class="up"
+      data-testid="up"
+    >
+      <img
+        alt="Skater Ghost"
+        src="https://static1.squarespace.com/static/546be815e4b05d93ff91f0ed/602eefdc0afad00aceb2a0ce/602eeff8513f620bd182f959/1613688877207/skater-ghost.png?format=500w"
+      />
+      <figcaption
+        class="name"
+      >
+        Skater Ghost
+      </figcaption>
+      <figcaption
+        class="hoverCaption"
+      >
+        Do you want to go fast? This rad boy can take you for a ride.
+      </figcaption>
+    </figure>
+  </li>
+  <li
+    aria-label="ghost"
+  >
+    <figure
+      aria-label="ghost item"
+      class="up"
+      data-testid="up"
+    >
+      <img
+        alt="Pizza Ghost"
+        src="https://static1.squarespace.com/static/546be815e4b05d93ff91f0ed/602eefdc0afad00aceb2a0ce/602eeff794590f3aa30facf3/1613688876489/pizza-ghost.png?format=750w"
+      />
+      <figcaption
+        class="name"
+      >
+        Pizza Ghost
+      </figcaption>
+      <figcaption
+        class="hoverCaption"
+      >
+        Pizza Ghost makes sure your turtle\`s favorite snack is always on hand.
+      </figcaption>
+    </figure>
+  </li>
+  <li
+    aria-label="ghost"
+  >
+    <figure
+      aria-label="ghost item"
+      class="up"
+      data-testid="up"
+    >
+      <img
+        alt="Opossum Ghost"
+        src="https://static1.squarespace.com/static/546be815e4b05d93ff91f0ed/602eefdc0afad00aceb2a0ce/602eeff6bdfb7d2171ecaab2/1613688876492/opossum-ghost.png?format=750w"
+      />
+      <figcaption
+        class="name"
+      >
+        Opossum Ghost
+      </figcaption>
+      <figcaption
+        class="hoverCaption"
+      >
+        Have you ever needed to get out of a situation by playing dead? Well, Opossum Ghost will help you play the deadest of dead and keep you safe.
+      </figcaption>
+    </figure>
+  </li>
+  <li
+    aria-label="ghost"
+  >
+    <figure
+      aria-label="ghost item"
+      class="up"
+      data-testid="up"
+    >
+      <img
+        alt="Off Beat Ghost"
+        src="https://static1.squarespace.com/static/546be815e4b05d93ff91f0ed/602eefdc0afad00aceb2a0ce/602eeff666440d6eb8252b2e/1613688876481/off-beat-ghost.png?format=750w"
+      />
+      <figcaption
+        class="name"
+      >
+        Off Beat Ghost
+      </figcaption>
+      <figcaption
+        class="hoverCaption"
+      >
+        Off Beat Ghost will ruin every song your enemy ever wants to listen to. The perfect revenge companion.
+      </figcaption>
+    </figure>
+  </li>
+  <li
+    aria-label="ghost"
+  >
+    <figure
+      aria-label="ghost item"
+      class="up"
+      data-testid="up"
+    >
+      <img
+        alt="Fruit Ghost"
+        src="https://static1.squarespace.com/static/546be815e4b05d93ff91f0ed/602eefdc0afad00aceb2a0ce/602eeff5a425c5351bf91e0e/1613688876489/fruit-ghost.png?format=500w"
+      />
+      <figcaption
+        class="name"
+      >
+        Fruit Ghost
+      </figcaption>
+      <figcaption
+        class="hoverCaption"
+      >
+        This total sweetheart of a ghost knows all the seasonal fruits and where to find them and makes sure you know too.
+      </figcaption>
+    </figure>
+  </li>
+  <li
+    aria-label="ghost"
+  >
+    <figure
+      aria-label="ghost item"
+      class="up"
+      data-testid="up"
+    >
+      <img
+        alt="Plant Ghost"
+        src="https://static1.squarespace.com/static/546be815e4b05d93ff91f0ed/602eefdc0afad00aceb2a0ce/602eeff7b519f611023339d6/1613688876493/plant-ghost.png?format=750w"
+      />
+      <figcaption
+        class="name"
+      >
+        Plant Ghost
+      </figcaption>
+      <figcaption
+        class="hoverCaption"
+      >
+        Is your home a graveyard for house plants? This ghost cares for spirits of all the plants you have killed.
+      </figcaption>
+    </figure>
+  </li>
+  <li
+    aria-label="ghost"
+  >
+    <figure
+      aria-label="ghost item"
+      class="up"
+      data-testid="up"
+    >
+      <img
+        alt="Bad Photo Ghost"
+        src="https://static1.squarespace.com/static/546be815e4b05d93ff91f0ed/602eefdc0afad00aceb2a0ce/602eeff5513f620bd182f737/1613688824112/bad-photo-ghost.png?format=750w"
+      />
+      <figcaption
+        class="name"
+      >
+        Bad Photo Ghost
+      </figcaption>
+      <figcaption
+        class="hoverCaption"
+      >
+        Bad Photo Ghost knows all your best angles, and they artistically blur you in every photo you look bad in.
+      </figcaption>
+    </figure>
+  </li>
+  <li
+    aria-label="ghost"
+  >
+    <figure
+      aria-label="ghost item"
+      class="up"
+      data-testid="up"
+    >
+      <img
+        alt="Water Ghost"
+        src="https://static1.squarespace.com/static/546be815e4b05d93ff91f0ed/602eefdc0afad00aceb2a0ce/602ef134a3d834472c619132/1613689143957/water-ghost.png?format=500w"
+      />
+      <figcaption
+        class="name"
+      >
+        Water Ghost
+      </figcaption>
+      <figcaption
+        class="hoverCaption"
+      >
+        Do you ever need to breath underwater? Water Ghost is the very air you need where there is none. They are here for you for any spontaneous diving sessions. *does not supply air in outer space*
+      </figcaption>
+    </figure>
+  </li>
+  <li
+    aria-label="ghost"
+  >
+    <figure
+      aria-label="ghost item"
+      class="up"
+      data-testid="up"
+    >
+      <img
+        alt="Human Ghost"
+        src="https://static1.squarespace.com/static/546be815e4b05d93ff91f0ed/602eefdc0afad00aceb2a0ce/602eeff666440d6eb8252b28/1613688876498/human-ghost.png?format=750w"
+      />
+      <figcaption
+        class="name"
+      >
+        Human Ghost
+      </figcaption>
+      <figcaption
+        class="hoverCaption"
+      >
+        Wrap your lonely heart in the tender embrace of Human Ghost.
+      </figcaption>
+    </figure>
+  </li>
+</ul>
+`;

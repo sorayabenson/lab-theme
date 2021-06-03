@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from '../../styles/Header.module.css';
 
 const Header = ({ theme, onChange }) => (
-    <header className={styles.header}>
+    <header className={`${theme === true ? styles.up : styles.down}`}>
         <h1>ghost flip</h1>
         <label className={styles.toggle}>
             <input 
@@ -18,8 +18,8 @@ const Header = ({ theme, onChange }) => (
 )
 
 Header.propTypes = {
-    // theme: PropTypes.bool.isRequired,
-    // onChange: PropTypes.func.isRequired,
+    theme: PropTypes.bool.isRequired,
+    onChange: PropTypes.func.isRequired,
 }
 
 export default Header;

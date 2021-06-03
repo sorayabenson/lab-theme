@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 import GhostItem from './GhostItem';
 import '../../styles/Ghost.module.css'
 
-const GhostList = ({ ghosts }) => (
+const GhostList = ({ ghosts, theme }) => (
         <ul aria-label='ghosts'>
             {ghosts.map((ghost) => {
                 return (
                     <li
                         aria-label='ghost'
                         key={ghost.name}>
-                        <GhostItem {...ghost}/>
+                        <GhostItem {...ghost} theme={theme}/>
                     </li>
                 )
             })}
@@ -25,7 +25,8 @@ GhostList.propTypes = {
             name: PropTypes.string.isRequired,
             description: PropTypes.string.isRequired,
         })
-    ).isRequired
+    ).isRequired,
+    theme: PropTypes.bool.isRequired
 }
 
 export default GhostList;
