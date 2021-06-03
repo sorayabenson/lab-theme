@@ -9,6 +9,7 @@ import { rest } from 'msw';
 import userEvent from '@testing-library/user-event'
 import App from './App';
 import mockGhosts from '../../../fixtures/ghosts.json';
+import GhostProvider from '../../provider/GhostProvider';
 
 const server = setupServer(
   rest.get(
@@ -26,7 +27,10 @@ describe('App component', () => {
   afterAll(() => server.close());
 
   it('renders App', async () => {
-    render(<App />);
+    render(
+      <GhostProvider>
+        <App />
+      </GhostProvider>);
 
     await screen.findByText('ghost flip');
     await screen.findByText('flip the switch, flip the ghosts');

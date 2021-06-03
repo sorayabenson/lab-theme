@@ -21,10 +21,6 @@ const GhostProvider = ({ children }) => {
     )
 }
 
-export const useGhosts = () => {
-    return useContext(GhostContext);
-}
-
 export const useFlip = () => {
     const { flipGhosts } = useContext(GhostContext);
     return flipGhosts;

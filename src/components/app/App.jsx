@@ -4,5 +4,10 @@ import Ghost from '../../container/Ghost';
 import '../../styles/globals.css';
 
 export default function App() {
-  return <Ghost />;
+  return (
+    <>
+      <Header />
+      <Ghost />
+    </>
+  );
 }
